@@ -47,7 +47,7 @@ const Join = () => {
 			</h2>
 			<div className="flex flex-col py-4 items-center  justify-center ">
 				<div>
-					<p className="text-2xl  w-[70rem] my-3 text-center font-bold  px-3 text-slate-300">
+					<p className="text-2xl xl:w-[700px] sm:w-fit text-wrap my-3 text-center font-bold  px-3 text-slate-300">
 						Texas Express Wash is seeking self-motivated individuals with a
 						passion for providing the best possible experience for our
 						customers. If that's you, we want to meet you!
@@ -56,7 +56,7 @@ const Join = () => {
 
 				<div>
 					<div className="flex justify-center max-w-3xl items-center min-h-screen mt-8 bg-blue-600 rounded-3xl">
-						<div className="w-full max-w-3xl rounded-3xl p-8 border-4 border-gray-500 rounded-lg bg-blue-600">
+						<div className="w-full max-w-3xl rounded-3xl p-8 border-4 border-gray-500  bg-blue-600">
 							<h2 className="text-2xl text-slate-300 font-bold mb-6">Join Application Form</h2>
 							<form onSubmit={handleSubmit(onSubmit)}>
 								{/* Name Fields */}
