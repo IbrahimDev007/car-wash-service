@@ -1,4 +1,4 @@
-import Layout from "@/Layout/layout";
+import Layout from "@/Layout/Layout";
 import AuthProvider from "@/provider/AuthProvider";
 import "@/styles/globals.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
