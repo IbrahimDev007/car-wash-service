@@ -10,6 +10,14 @@ const nextConfig = {
     };
     return config;
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'img.daisyui.com',
+      },
+    ],
+  },
 };
 
 export default nextConfig;

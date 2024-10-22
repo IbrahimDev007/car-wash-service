@@ -1,20 +1,18 @@
-
-
 import Link from "next/link";
 import React, { useState } from "react";
 
 const Navbar = () => {
-	const [close, setclose] = useState(true);
+	const [close, setClose] = useState(true);
 
 	return (
-		<div className="navbar bg-transparent absolute top-0 left-0 text-base-100 h-[7rem]">
+		<div className="navbar bg-transparent fixed z-30 top-0 left-0 text-base-100 ">
 			<div className="navbar-start">
 				<div className="dropdown">
 					<div
 						tabIndex={0}
 						role="button"
-						className="btn btn-circle bg-inherit hover:bg-yellow-500 text-blue-900 lg:hidden"
-						onClick={() => setclose(!close)}
+						className="btn btn-circle bg-slate-300 hover:bg-yellow-500 text-blue-900 lg:hidden"
+						onClick={() => setClose(!close)} // Toggle the state here
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +29,8 @@ const Navbar = () => {
 							/>
 						</svg>
 					</div>
-					{true && (
+					{/* Use the state to show or hide the dropdown */}
+					{!close && (
 						<ul
 							tabIndex={0}
 							className="menu menu-sm dropdown-content bg-blue-900 rounded-box z-[1] mt-3 w-52 p-2 shadow"
@@ -43,13 +42,13 @@ const Navbar = () => {
 								<a>Location</a>
 								<ul className="p-2">
 									<li>
-										<Link href="/">Locaion 1</Link>
+										<Link href="/">Location 1</Link>
 									</li>
 									<li>
-										<Link href="/">Locaion 2</Link>
+										<Link href="/">Location 2</Link>
 									</li>
 									<li>
-										<Link href="/">Locaion 2</Link>
+										<Link href="/">Location 2</Link>
 									</li>
 								</ul>
 							</li>
@@ -83,13 +82,13 @@ const Navbar = () => {
 							<summary>Location</summary>
 							<ul className="p-2">
 								<li>
-									<Link href="/">Locaion 1</Link>
+									<Link href="/">Location 1</Link>
 								</li>
 								<li>
-									<Link href="/">Locaion 2</Link>
+									<Link href="/">Location 2</Link>
 								</li>
 								<li>
-									<Link href="/">Locaion 2</Link>
+									<Link href="/">Location 2</Link>
 								</li>
 							</ul>
 						</details>
