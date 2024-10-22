@@ -1,11 +1,11 @@
-import Footer from "@/Components/Footer";
-import Navbar from "@/Components/Navbar";
+import Footer from "@/Shared/Footer";
+import Navbar from "@/Shared/Navbar";
 import React from "react";
 
 const Layout = ({ children }) => {
 	return (
-		<div className="flex flex-col  bg-blue-900 ">
-			<div className="">
+		<div className="flex flex-col relative  bg-blue-900 ">
+			<div className="relative">
 				<div
 					className="  relative z-10 top-0 right-0 m-0 p-0 
       "
