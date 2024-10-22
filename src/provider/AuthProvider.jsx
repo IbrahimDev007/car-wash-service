@@ -9,7 +9,7 @@ import {
 	signOut,
 	updateProfile,
 } from "firebase/auth";
-import app from "@/lib/firebase.config";
+import app from "@/Lib/firebase.config";
 // import axios from "axios";
 
 export const AuthContext = createContext(null);
@@ -73,11 +73,11 @@ const AuthProvider = ({ children }) => {
 		});
 		return () =>
 			unsubscribe()
-				.then(() => {
-					// localStorage.removeItem("access-verify-token");
-					console.log("remove done");
-				})
-				.catch((err) => console.log(err));
+        // .then(() => {
+		// 			// localStorage.removeItem("access-verify-token");
+		// 			console.log("remove done");
+		// 		})
+		// 		.catch((err) => console.log(err));
 	}, []);
 
 	const authInfo = {
