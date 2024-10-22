@@ -40,7 +40,7 @@ const Navbar = () => {
 							</li>
 							<li>
 								<a>Location</a>
-								<ul className="p-2">
+								<ul className="p-2 bg-blue-900">
 									<li>
 										<Link href="/">Location 1</Link>
 									</li>
@@ -53,13 +53,13 @@ const Navbar = () => {
 								</ul>
 							</li>
 							<li>
-								<Link href="/">FAQ</Link>
+								<Link href="/Faq">FAQ</Link>
 							</li>
 							<li>
-								<Link href="/">Join The Team</Link>
+								<Link href="/Join">Join The Team</Link>
 							</li>
 							<li>
-								<Link href="/">Contact</Link>
+								<Link href="/Contact">Contact</Link>
 							</li>
 						</ul>
 					)}
@@ -80,7 +80,7 @@ const Navbar = () => {
 					<li>
 						<details>
 							<summary>Location</summary>
-							<ul className="p-2">
+							<ul className="p-2 bg-blue-900">
 								<li>
 									<Link href="/">Location 1</Link>
 								</li>
@@ -94,13 +94,13 @@ const Navbar = () => {
 						</details>
 					</li>
 					<li>
-						<Link href="/">FAQ</Link>
+						<Link href="/Faq">FAQ</Link>
 					</li>
 					<li>
-						<Link href="/">Join The Team</Link>
+						<Link href="/Join">Join The Team</Link>
 					</li>
 					<li>
-						<Link href="/">Contact</Link>
+						<Link href="/Contact">Contact</Link>
 					</li>
 				</ul>
 			</div>

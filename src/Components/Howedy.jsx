@@ -2,7 +2,7 @@ import React from "react";
 import { FaCarCrash } from "react-icons/fa";
 import { FaHandsClapping } from "react-icons/fa6";
 import { FaBrush } from "react-icons/fa6";
-// import { FaStar } from "react-icons/fa";
+
 import { FaCircleCheck } from "react-icons/fa6";
 const Howedy = () => {
 	const cards = [
