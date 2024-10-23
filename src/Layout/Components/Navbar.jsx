@@ -5,7 +5,7 @@ const Navbar = () => {
 	const [close, setClose] = useState(true);
 
 	return (
-		<nav className="navbar bg-transparent absoulate z-30 top-0 left-0 text-base-100 ">
+		<nav className="navbar bg-transparent z-30 top-0 left-0 text-base-100 ">
 			<div className="navbar-start">
 				<div className="dropdown">
 					<div
